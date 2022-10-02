@@ -5,26 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <com.hbb20.CountryCodePicker
         android:id="@+id/countryCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="16dp"
-        android:gravity="center"/>
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        app:ccpDialog_textColor="#DFD2D2" />
 
     <EditText
         android:id="@+id/phoneNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginVertical="20dp"
+        android:layout_marginVertical="25dp"
         android:ems="10"
-        android:hint="Mobile No"
+        android:hint="Mobile No."
         android:inputType="phone"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="#D6C52C" />
 
     <EditText
         android:id="@+id/message"
@@ -32,16 +35,19 @@
         android:layout_height="100dp"
         android:layout_marginHorizontal="16dp"
         android:ems="10"
+        android:hint="Message"
         android:inputType="textMultiLine"
-        android:hint="Message"/>
+        android:textColor="#D6C52C" />
 
     <Button
         android:id="@+id/sendbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_gravity="center"
-        android:text="Send"/>
+        android:layout_marginTop="32dp"
+        android:background="#39D50E"
+        android:shadowColor="#CC2A9E"
+        android:text="Send" />
 
 
 
